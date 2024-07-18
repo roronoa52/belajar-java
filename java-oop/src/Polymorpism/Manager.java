@@ -1,6 +1,6 @@
-package Inheritance;
+package Polymorpism;
 
-public class Manager {
+public class Manager extends Employee {
 
     String name;
     Integer age;

@@ -12,6 +12,7 @@ public class Main {
         var ViceManager = new ViceManager();
         ViceManager.name = "Vice Manager 1";
         ViceManager.Sayhello("Yp");
+        System.out.println(ViceManager.GetAgeParent());
 
     }
 }

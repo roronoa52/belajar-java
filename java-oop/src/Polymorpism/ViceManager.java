@@ -1,4 +1,4 @@
-package Inheritance;
+package Polymorpism;
 
 public class ViceManager extends Manager {
 
@@ -6,7 +6,5 @@ public class ViceManager extends Manager {
         System.out.println("Hello " + name + " I'm your Vice Manage, My name is: " + this.name);
     }
 
-    int GetAgeParent(){
-        return super.GetAge();
-    }
+
 }
