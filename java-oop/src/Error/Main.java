@@ -14,5 +14,8 @@ public class Main {
             System.out.println(e.getMessage());
         }
 
+        LoginRequest loginRequest = new LoginRequest("", "tes");
+        ValidationUtil.Runtimevalidate(loginRequest);
+
     }
 }
