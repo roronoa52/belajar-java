@@ -3,6 +3,6 @@ package InitLambda;
 @FunctionalInterface
 public interface SimpleAction {
 
-    String action();
+    String action(String names);
 
 }
