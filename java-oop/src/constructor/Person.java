@@ -6,9 +6,9 @@ public class Person {
     Integer age;
     final String city = "medan";
 
-    Person(String ParamName, Integer ParamAge){
-        name = ParamName;
-        age = ParamAge;
+    Person(String name, Integer age){
+        this.name = name;
+        this.age = age;
     }
 
     Person(String ParamName){
@@ -21,7 +21,7 @@ public class Person {
         this(null, null);
     }
 
-    void Sayhello(String ParamName){
-        System.out.println("Hello " + ParamName + " My name is: " + name);
+    void Sayhello(String name){
+        System.out.println("Hello " + name + " My name is: " + this.name);
     }
 }
