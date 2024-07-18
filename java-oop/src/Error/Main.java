@@ -11,13 +11,17 @@ public class Main {
             ValidationUtil.validate(loginRequest);
 
         }catch (ValidationExecption | NullPointerException e){
-            System.out.println(e.getMessage());
+            // cara pertama untuk track error
+            StackTraceElement[] stackTraceElements = e.getStackTrace();
+
+            //cara kedua untuk track error
+            e.printStackTrace();
         }
 
-        LoginRequest loginRequest2 = new LoginRequest("", "tes");
-        ValidationUtil.Runtimevalidate(loginRequest2);
-
-        DatabaseConnection(null, null);
+//        LoginRequest loginRequest2 = new LoginRequest("", "tes");
+//        ValidationUtil.Runtimevalidate(loginRequest2);
+//
+//        DatabaseConnection(null, null);
 
     }
 
