@@ -14,8 +14,16 @@ public class Main {
             System.out.println(e.getMessage());
         }
 
-        LoginRequest loginRequest = new LoginRequest("", "tes");
-        ValidationUtil.Runtimevalidate(loginRequest);
+        LoginRequest loginRequest2 = new LoginRequest("", "tes");
+        ValidationUtil.Runtimevalidate(loginRequest2);
 
+        DatabaseConnection(null, null);
+
+    }
+
+    public static void DatabaseConnection(String username, String password){
+        if (username == null || password == null){
+            throw new DatabaseException("Database tidak bisa terkoneksi");
+        }
     }
 }
