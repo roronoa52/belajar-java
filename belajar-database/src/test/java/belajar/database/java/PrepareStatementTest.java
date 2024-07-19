@@ -30,6 +30,10 @@ public class PrepareStatementTest {
             System.out.println("Gagal login");
         }
 
+        resultSet.close();
+        preparedStatement.close();
+        connection.close();
+
     }
 
 }
