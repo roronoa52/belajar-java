@@ -61,4 +61,9 @@ public class CalculatorTest {
         }
     }
 
+    @Test
+    public void testAssumptions(){
+        Assumptions.assumeTrue("DEV".equals(System.getenv("PROFILE")));
+    }
+
 }
