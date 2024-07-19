@@ -9,7 +9,7 @@ public class TransformationOperationTest {
 
     @Test
     void testMap() {
-        List.of("Eko", "Kurniawan", "Khannedy").stream()
+        List.of("Farhan", "Yudha", "Pratama").stream()
                 .map(name -> name.toUpperCase())
                 .map(upper -> upper.length())
                 .forEach(length -> System.out.println(length));
