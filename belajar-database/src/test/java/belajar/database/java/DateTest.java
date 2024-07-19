@@ -37,7 +37,7 @@ public class DateTest {
             Timestamp timestamp = resultSet.getTimestamp("sample_timestamp");
             System.out.println("Timestamp = " + timestamp);
         }
-        
+
         resultSet.close();
         preparedStatement.close();
         connection.close();
