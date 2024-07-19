@@ -1,6 +1,7 @@
 package belajar.testing;
 
 import org.junit.jupiter.api.*;
+import org.opentest4j.TestAbortedException;
 
 public class CalculatorTest {
 
@@ -50,6 +51,14 @@ public class CalculatorTest {
     @Test
     public void TestComingSoon(){
         Assertions.assertThrows(IllegalArgumentException.class, () -> calculator.divide(0,5));
+    }
+
+    @Test
+    public void testAborted(){
+        var profile = System.getenv("PROFILE");
+        if(!"DEV".equals(profile)){
+            throw new TestAbortedException("Test dibatalkan karena bukan DEV");
+        }
     }
 
 }
