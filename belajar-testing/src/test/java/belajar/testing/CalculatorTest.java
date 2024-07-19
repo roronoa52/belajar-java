@@ -1,6 +1,7 @@
 package belajar.testing;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -25,6 +26,12 @@ public class CalculatorTest {
     @DisplayName("Test calculator divide failed")
     @Test
     public void TestDivideFailed(){
+        Assertions.assertThrows(IllegalArgumentException.class, () -> calculator.divide(0,5));
+    }
+
+    @Disabled
+    @Test
+    public void TestComingSoon(){
         Assertions.assertThrows(IllegalArgumentException.class, () -> calculator.divide(0,5));
     }
 
